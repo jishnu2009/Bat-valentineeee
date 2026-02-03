@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 🌷</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg, #d9e4f5, #f6f1f1);
+}
+
+.card{
+  background:white;
+  padding:30px 25px;
+  border-radius:20px;
+  text-align:center;
+  width:90%;
+  max-width:380px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1{
+  font-size:22px;
+  color:#4a6fa5;
+  margin-bottom:12px;
+}
+
+p{
+  font-size:15px;
+  color:#444;
+  margin-bottom:20px;
+  line-height:1.5;
+}
+
+button{
+  padding:10px 24px;
+  font-size:14px;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  background:#4a6fa5;
+  color:white;
+}
+
+button:active{
+  transform:scale(0.96);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Hey 🌼</h1>
+  <p>
+    How are you today?<br>
+    I felt like checking on you.
+  </p>
+  <button onclick="next()">Tap here</button>
+</div>
+
+<script>
+function next(){
+  document.body.innerHTML = `
+  <div style="
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#d9e4f5,#f6f1f1);
+    font-family:Poppins,sans-serif;
+    text-align:center;
+    padding:25px;">
+    
+    <div style="
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      max-width:400px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);">
+      
+      <h1 style="color:#4a6fa5; margin-bottom:15px;">
+        If something happened…
+      </h1>
+      <p style="color:#444; font-size:15px; line-height:1.5;">
+        You don’t have to handle everything alone.<br>
+        Take your time, breathe, and be kind to yourself.
+        <br><br>
+        Also, your exams matter — but **you matter more**.
+        Prepare calmly, step by step.
+        <br><br>
+        You’ve got this 🌱
+      </p>
+    </div>
+  </div>`;
+}
+</script>
+
+</body>
+</html>
